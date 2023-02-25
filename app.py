@@ -1,3 +1,6 @@
+os.system("pip install --upgrade pip")
+os.system("pip install umap-learn bechdelai==0.0.1a2")
+
 import gradio as gr
 import os
 
@@ -20,7 +23,7 @@ def analyze_genders(img):
 
     new_metrics = {"Space occupied by women":metrics["women_area"],"Space occupied by men":metrics["men_area"]}
 
-    return img_with_faces,new_metrics
+    return new_metrics, img_with_faces
 
 
 demo = gr.Interface(
