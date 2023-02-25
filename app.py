@@ -1,3 +1,6 @@
+# Temporary fix to install other requirements requirements here
+# Pip needs to be ugraded on Hugging Face spaces before installing the library
+import os 
 os.system("pip install --upgrade pip")
 os.system("pip install umap-learn bechdelai==0.0.1a2")
 
